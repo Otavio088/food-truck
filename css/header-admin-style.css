@@ -1,0 +1,59 @@
+header {
+    background-color: #242424;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative; /* pode desloca-lo usando as propriedades de deslocamento*/
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul li a {
+    color: white;
+    padding: 30px;
+    display: inline-block;
+    width: 100%;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Estilo para o menu suspenso */
+nav ul .dropdown-menu {
+    display: none; /* Ocultar por padrão */
+    position: absolute;
+    top: 100%; /* Alinhado abaixo do item pai */
+    left: 0;
+    background-color: #242424;
+    padding: 0px 0;
+    min-width: 150px;
+    z-index: 1;
+    width: 100%;
+}
+
+nav ul .dropdown-menu li a {
+    color: #fff;
+    padding: 15px;
+    display: block;
+    width: 100%;
+}
+
+nav ul .dropdown-menu li a:hover {
+    background-color: #555;
+}
+
+/* Exibir o dropdown ao passar o mouse */
+nav ul .dropdown:hover .dropdown-menu {
+    display: block;
+}

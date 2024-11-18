@@ -1,0 +1,93 @@
+body {
+    height: 100vh;
+    background-color: #a2c0b5;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
+main {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-register {
+    background-color: #fff;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+    border-radius: 10px;
+}
+
+.box-register h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 45px;
+}
+
+.box-register form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 60px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form input, form textarea, form select {
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+/* Efeito ao focar nos campos */
+form input:focus, form textarea:focus, form select:focus{
+    border-color: #4c4eaf; /* Cor da borda ao focar no input */
+    outline: none;
+}
+
+.box-register form textarea {
+    resize: none;
+}
+
+.box-register form select {
+    height: 35px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.box-register form button {
+    padding: 12px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: #7AB2D3;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    transition: background-color 0.3s ease; 
+}
+/* Efeito ao passar o mouse sobre o botão */
+.box-register form button:hover {
+    background-color: #4f5eb18a;
+    color: #fff;
+}
+
+#msg-php {
+    text-align: center;
+    font-weight: bolder;
+    padding: 5px;
+}

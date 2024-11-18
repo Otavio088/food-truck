@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+header {
+    background-color: #242424;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li {
+    width: 100%;
+    text-align: center;
+}
+
+ul li a {
+    color: white;
+    padding: 30px;
+    display: block;
+    width: 100%;
+}
+
+ul li a:hover {
+    background-color: #555;
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        font-size: 22px;
+    }   
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul li {
+        padding: 0;
+        padding-top: 20px;
+    }
+
+    nav #btn-mobile {
+        display: flex;
+        padding: 25px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #hamburger {
+        border-top: 6px solid #fff;
+        width: 50px;
+    }
+
+    #hamburger:after, #hamburger:before {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 6px;
+        background-color: #fff;
+        margin-top: 10px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger:before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger:after {
+        transform: rotate(-135deg);
+        top: -15px;
+    }
+
+    nav ul {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 90px;
+        padding-top: 25px;
+        right: 0px;
+        background-color: #242424;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active ul {
+        height: calc(100vh - 70px);
+        visibility: visible;
+    }
+
+    ul li {
+        padding: 15px;
+        
+    }
+
+    li:after {
+        background-color: transparent;
+    }
+
+    li a:hover {
+        color: #D2D7DE;
+    }
+
+    li:hover {
+        background-color: none
+    }
+}

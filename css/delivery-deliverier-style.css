@@ -1,0 +1,109 @@
+body {
+    background-color: #a2c0b5;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
+body main {
+    padding: 20px;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+main div {
+    margin: 20px 0;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 15px;
+}
+
+div table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #7AB2D3;
+    color: #000;
+    font-weight: bolder;
+}
+
+.forms {
+    padding: 50px;
+}
+
+.forms form {
+    margin-bottom: 20px;
+    padding: 16px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    background: #fff;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+form label {
+    font-weight: bolder;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 2px solid #808080;
+    border-radius: 5px;
+    font-size: 18px;
+    resize: none;
+    transition: border-color 0.3s ease;
+}
+form input:focus{
+    border-color: #4c4eaf;
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #7AB2D3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bolder;
+}
+form button:hover {
+    background-color: #7ab2d39a;
+    color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+    .table-wrapper {
+        overflow-x: auto; /* Permite rolagem horizontal */
+        -webkit-overflow-scrolling: touch; /* Rolagem suave no celular */
+        padding-top: 50px;
+    }
+
+    table td {
+        font-size: 18px;
+    }
+
+    .forms {
+        padding: 20px;
+    }
+}
